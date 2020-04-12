@@ -1,9 +1,11 @@
 <footer class="footer__section">
     <div class="footer__wrapper">
         <div class="footer__last-words">
-            <span>SIMPLE,</span>
+            <!-- <span>SIMPLE,</span>
             <span>CONCISE,</span>
-            <span>& EFFECTIVE</span>
+            <span>& EFFECTIVE</span> -->
+            <p>Learning to be a pro</p> 
+            <p>One erro<span>r</span> at a time</p>
         </div>
 
         <div class="footer__social-media--wrapper">
