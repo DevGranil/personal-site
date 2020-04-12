@@ -17,14 +17,16 @@ class Projects{
     public $text;
     public $desktopImg;
     public $phoneImg;
+    public $bgImg;
 
 
-    function __construct($name, $skillsUsed, $text, $desktopImg, $phoneImg){
+    function __construct($name, $skillsUsed, $text, $desktopImg, $phoneImg, $bgImg){
         $this->name = $name;
         $this->skillsUsed = $skillsUsed;
         $this->text = $text;
         $this->desktopImg = $desktopImg;
         $this->phoneImg = $phoneImg;
+        $this->bgImg = $bgImg;
 
     }
 
@@ -34,8 +36,10 @@ $projectArray = Array(
     new Projects("ELOUIZA UPLIFTS", Array("HTML", "CSS", "JAVASCRIPT", "PHP", "WORDPRESS"),
     "Custom built word press theme so one of a kind. If you’re into fitness, food, lifestyle and….. 
     the boring part…being a student then check this space out. Elouiza gives great tips on these topics within her social blogging platform.",
-    "images/elouizauplifts.png",
-    "images/elouizauplifts-phone.jpg"
+    "images/elouizauplifts.jpg",
+    "images/elouizauplifts-phone.png",
+    "images/elouizupliftsbg.png"
+
     )
 );
 
@@ -118,7 +122,7 @@ $skillsArr = Array(
         <div class="recent-work__wrapper">
             <h3 class="recent-work__wrapper-title">RECENT WORK</h3>
             <?php foreach($projectArray as $project):?>
-                <div class="a-proj__wrapper">
+                <div class="a-proj__wrapper" style="background-image: url('<?php echo $project->bgImg?>')">
                 <div class="a-proj__images">
                     <div class="a-proj__images--screenshot">
                     <img src="<?php echo $project->desktopImg?>" alt="">
