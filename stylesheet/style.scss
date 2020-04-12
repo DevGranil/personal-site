@@ -1,0 +1,693 @@
+
+$medScreen: 1024px;
+$small-to-med: 600px;
+$grey-font-color: #7F7979;
+
+@mixin headings($screen) {
+    @if $screen == $small-to-med{
+        letter-spacing: 2px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    @if $screen == $medScreen{
+        letter-spacing: 4px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+@mixin text($screen){
+    @if $screen == $small-to-med{
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 1px;
+    }
+
+    @if $screen == $medScreen{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin:0;
+    
+}
+
+a:link, a, a:active{
+    color: inherit;
+    text-decoration: none;
+}
+
+.spinner{
+    display: block !important;
+}
+
+.body__container{
+    background-color: #E7D8C4;
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+
+    .loader{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(231, 216, 196,0.4);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+
+        &__spinner1, &__spinner2, &__spinner3{
+            border: 5px solid white;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        &__spinner1{
+            height: 60px;
+            width: 60px;
+            display: none;
+        }
+
+        &__spinner2{
+            height: 120px;
+            width: 120px;
+            display: none;
+        }
+
+        &__spinner3{
+            height: 180px;
+            width: 180px;
+            display: none;
+        }
+    }
+    
+    
+
+    .site__wrapper{
+        height: 100%;
+    }
+   
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    &__img--small{
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+        @media screen and(min-width: $medScreen) {
+            width: 500px;
+            
+        }
+    }
+}
+
+nav.nav{
+    min-height: 100px;
+    width: 100%;
+    position: absolute;
+
+    @media screen and (min-width: $medScreen){
+        display: flex;
+        align-items: center;
+        padding: 20px 20px;
+        
+    }
+
+    .hamburger__wrapper{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        @media screen and (min-width: $medScreen){
+            display: none;
+            
+        }
+    }
+    .hamburger__line{
+        width: 30px;
+        height: 4px;
+        background-color:#fff;
+        margin: 5px 0;
+    }
+    .mob-nav__wrapper{
+      
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        position: fixed;
+        top: 100px;
+        display: none;
+
+        @media screen and (min-width: $medScreen){
+            position: static;
+            display: block;
+            
+        }
+
+        ul{
+         
+            background-color: rgba(255, 255, 255, 0.9);
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            letter-spacing: 5px;
+            font-weight: 900;
+            max-width: 600px;
+            margin: 0 auto;
+
+            @media screen and (min-width: $medScreen){
+                background-color: transparent;
+                text-align: end;
+                justify-content: flex-end;
+                align-items: flex-end;
+                max-width: unset;
+                
+            }
+        }
+        
+        
+    }
+    .mob-nav__link {
+        margin: 10px auto;
+        color: black;
+        font-size: 14px;
+        @media screen and (min-width: $medScreen){
+            margin: 0 10px;
+            color: #fff;
+            
+        }
+
+        &--close{
+            @media screen and (min-width: $medScreen){
+                display: none;
+                
+            }
+            font-size: 10px;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding: 10px;
+
+        }
+        
+    }
+
+    
+}
+
+
+.about-me__section{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+
+
+
+    .about-me__{
+        &wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 0 50px 0;
+            @media screen and (min-width: $medScreen){
+                padding: 50px;
+                max-width: 1000px;
+            }
+
+    }
+
+    &title{
+        @include headings($small-to-med);
+        width: 350px;
+        margin: 50px auto;
+        text-align: center;
+
+        @media screen and (min-width: $medScreen){
+            @include headings($medScreen);
+        }
+
+    }
+
+    &content{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $medScreen){
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        &--icon{
+            margin: 0px auto 50px auto;
+            @media screen and (min-width: $medScreen){
+                flex: 0 0 20%;
+                margin: 0px auto 0px auto;
+            }
+        }
+
+        &--text{
+            @include text($small-to-med);
+            padding: 0 20px;
+
+            @media screen and (min-width: $medScreen){
+               @include text($medScreen);
+            }
+    
+        }
+    }
+        
+
+    }
+}
+
+.skills{
+    
+    &__section{
+        min-height: 100px;
+        background-color: #fff;
+        background-image: url('../svg/skills-dec.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+      
+    }
+    &__wrapper{
+        height: 100%;
+        max-width: 100vw;
+        padding: 50px 5px;
+        display: flex;
+        flex-wrap: wrap;
+        color: $grey-font-color;
+
+
+        @media screen and (min-width: $medScreen){
+            padding: 100px 5px 0 5px;
+        }
+
+
+     
+
+
+        &-title{
+            @include headings($small-to-med);
+            
+            margin-bottom: 50px;
+            text-align: center;
+            flex: 0 0 100%;
+
+            @media screen and (min-width: $medScreen){
+                @include headings($medScreen);
+                
+            }
+            
+            
+        }
+
+        .a-skill{
+            &__wrapper{
+                height: 110px;
+                flex: 0 0 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media screen and (min-width: $small-to-med){
+                    flex: 0 0 50%;
+                }
+
+
+                @media screen and (min-width: $medScreen){
+                    flex: 0 0 33%;
+                }
+
+
+                progress[value] {
+                    display: block;
+                    width: 150px;
+                    height: 10px;
+                    margin: 0 auto;
+                    -webkit-appearance: none;
+                    appearance: none;
+
+                    @media screen and (min-width: $medScreen){
+                        width: 350px;
+                    }
+                }
+
+                progress[value]::-webkit-progress-bar {
+                    background-color: #eee;
+                    border-radius: 2px;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+                  }
+
+                  progress[value]::-moz-progress-bar {
+                    background-image:
+                            -webkit-linear-gradient(-45deg, 
+                                                    transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                                    rgba(0,0, 0, .1) 66%, transparent 66%),
+                            -webkit-linear-gradient(top, 
+                                                    rgba(255, 255, 255, .25), 
+                                                    rgba(0, 0, 0, .25)),
+                            -webkit-linear-gradient(left, #09c, #f44);
+
+                            border-radius: 2px;
+                            background-size: 35px 20px, 100% 100%, 100% 100%;
+                  }
+
+                  progress::-ms-fill {
+                    background-image:
+                    -webkit-linear-gradient(-45deg, 
+                                            transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                            rgba(0,0, 0, .1) 66%, transparent 66%),
+                    -webkit-linear-gradient(top, 
+                                            rgba(255, 255, 255, .25), 
+                                            rgba(0, 0, 0, .25)),
+                    -webkit-linear-gradient(left, #09c, #f44);
+
+                    border-radius: 2px;
+                    background-size: 35px 20px, 100% 100%, 100% 100%;
+                  }
+
+                  progress[value]::-webkit-progress-value {
+                        background-image:
+                            -webkit-linear-gradient(-45deg, 
+                                                    transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                                                    rgba(0,0, 0, .1) 66%, transparent 66%),
+                            -webkit-linear-gradient(top, 
+                                                    rgba(255, 255, 255, .25), 
+                                                    rgba(0, 0, 0, .25)),
+                            -webkit-linear-gradient(left, #09c, #f44);
+
+                            border-radius: 2px;
+                            background-size: 35px 20px, 100% 100%, 100% 100%;
+                        }
+            }
+
+            &__text{
+                @include text($small-to-med);
+                margin: 5px 0;
+
+                @media screen and (min-width: $medScreen){
+                  @include text($medScreen)
+                }
+            }
+
+            &__percentage{
+                &-wrapper{
+                    display: flex;
+                    align-items: center;
+
+                }
+
+                &-sign{
+                    font-size: 10px;
+                }
+            }
+
+          
+        }
+    }
+
+}
+
+.recent-work__section {
+    min-height: 100px;
+    background-color: #fff;
+
+    .recent-work__wrapper{
+
+        padding: 50px 5px 0 5px;
+        color: $grey-font-color;
+        position: relative;
+
+        @media screen and (min-width: $medScreen){
+            padding: 50px 0;
+            
+        }
+
+
+        &-title{
+            @include headings($small-to-med);
+            margin: 0 auto 50px auto;
+            text-align: center;
+
+            @media screen and (min-width: $medScreen){
+                @include headings($medScreen);
+                
+            }
+    
+
+        }
+
+        .a-proj{
+            &__wrapper{
+            min-height: 50px;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (min-width: $medScreen){
+                flex-direction: row;
+                
+            }
+
+            }
+
+            &__images{
+                display: flex;
+                height: 200px;
+
+                @media screen and (min-width: $medScreen){
+                    height: 300px;
+                    
+                }
+
+                &--screenshot{
+                    flex: 0 0 60%;
+                    width: 100%;
+      
+
+                    > img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+    
+
+                }
+               
+                &--phone{
+                    height: 100%;
+                    flex: 0 0 40%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    @media screen and (min-width: $medScreen){
+                        flex: 0 0 37%;
+                        
+                    }
+           
+
+                    > img {
+                        height: 90%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+
+                    .phone__shadow{
+                        display: inline-block;
+                        height: 10px;
+                        border-radius: 50%;
+                        width: 100px;
+                        background-color: #D8D8D8;
+                    }
+                }
+
+
+            }
+
+            &__details{
+                padding-top: 20px;
+                background: url('../images/elouizupliftsbg.png') right bottom no-repeat ;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+
+                @media screen and (min-width: $medScreen){
+                    background-size: 400px;
+                    align-items: flex-start;
+                    
+                }
+
+
+
+                .project-skills{
+
+                    display: flex;
+                    justify-content: center;
+                    max-width: 600px;
+                    flex-wrap: wrap;
+                    @media screen and (min-width: $medScreen){
+                        flex-direction: column;
+                        align-items: flex-start;
+                        width: 100%;
+                        max-width: 100%;
+                        
+                    }
+
+                    @media screen and (min-width: $medScreen){
+                        span:nth-child(1){
+                            margin-top: 0;
+                        }
+
+                    }
+
+
+                    span {
+                        text-transform: uppercase;
+                        font-size: 10px;
+                        margin: 0 5px;
+                        letter-spacing: 2px;
+
+                        @media screen and (min-width: $medScreen){
+                            margin: 10px 0;
+
+                        }
+
+                    }
+                }
+
+                .project-title{
+                    font-weight: normal;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    @media screen and (min-width: $medScreen){
+                        font-size: 16px;
+                        
+                    }
+
+                }
+
+                .project-text{
+                    @include text($small-to-med);
+                    padding: 20px;
+
+                    @media screen and (min-width: $medScreen){
+                        padding: 20px 50px 20px 0;
+
+                    }
+                }
+            }
+        }
+
+
+    
+    }
+
+}
+
+.footer__section{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    @media screen and (min-width: $small-to-med){
+        height: 400px;
+    }
+
+    .footer{
+        &__wrapper{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        &__last-words{
+            letter-spacing: 2px;
+            font-size: 12px;
+
+            @media screen and(min-width: $medScreen){
+                font-size: 22px;
+
+            }
+        }
+        
+    }
+
+    .footer__social-media--wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+
+        @media screen  and(min-width: $medScreen){
+            padding: 0 80px;
+            
+        }
+
+        .media__container{
+            height: 30px;
+            width: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: relative;
+
+            @media screen  and(min-width: $medScreen){
+                height: 40px;
+                width: 40px;
+                
+            }
+
+
+            .social__icon{
+                width: 60%;
+                height: 60%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+
+    .footer__copyright{
+        font-size: 8px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+}
+
+
+.ham-rotate__clock {
+    transform: rotate(45deg) translateY(6px);
+    transition: transform 300ms 0s;
+  }
+  
+.ham-rotate__anti {
+transform: rotate(-45deg) translateY(-7px);
+transition: transform 300ms 0s;
+}
