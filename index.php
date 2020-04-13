@@ -37,7 +37,7 @@ $projectArray = Array(
     "Custom built word press theme so one of a kind. If you’re into fitness, food, lifestyle and….. 
     the boring part…being a student then check this space out. Elouiza gives great tips on these topics within her social blogging platform.",
     "images/elouizauplifts.jpg",
-    "images/elouizauplifts-phone.png",
+    "images/elouizauplifts-phone.jpg",
     "images/elouizupliftsbg.png"
 
     )
@@ -50,7 +50,7 @@ $skillsArr = Array(
   new Skills("HTML", 80),
   new Skills("CSS", 70,),
   new Skills("Javascript", 70),
-  new Skills("PHP", 40),
+  new Skills("PHP", 30),
   new Skills("Typescript", 60),
   new Skills("SCSS", 70),
   new Skills("Angular", 40)

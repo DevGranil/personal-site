@@ -64,6 +64,8 @@ $(document).ready(function () {
                 }
             });
             this.$document.on("scroll", function () {
+                if (skillSection.length == 0)
+                    return;
                 if (((skillSection.position().top - window.pageYOffset) + 300) < vp && !self.progressDone) {
                     self.progressAnimation();
                 }
