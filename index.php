@@ -18,15 +18,17 @@ class Projects{
     public $desktopImg;
     public $phoneImg;
     public $bgImg;
+    public $link;
 
 
-    function __construct($name, $skillsUsed, $text, $desktopImg, $phoneImg, $bgImg){
+    function __construct($name, $skillsUsed, $text, $desktopImg, $phoneImg, $bgImg, $link){
         $this->name = $name;
         $this->skillsUsed = $skillsUsed;
         $this->text = $text;
         $this->desktopImg = $desktopImg;
         $this->phoneImg = $phoneImg;
         $this->bgImg = $bgImg;
+        $this->link = $link;
 
     }
 
@@ -38,7 +40,8 @@ $projectArray = Array(
     the boring part…being a student then check this space out. Elouiza gives great tips on these topics within her social blogging platform.",
     "images/elouizauplifts.jpg",
     "images/elouizauplifts-phone.jpg",
-    "images/elouizupliftsbg.png"
+    "images/elouizupliftsbg.png",
+    "http://www.elouizauplifts.co.uk/"
 
     )
 );
@@ -91,7 +94,7 @@ $skillsArr = Array(
                       <use xlink:href="svg/svgsprite.svg#responsive"></use>
                 </svg>
                 <p class="about-me__content--text">
-                I am a self taught front end developer with a couple of years experience, a career path I love. I aim to create clean, personal, unique websites to remove ambiguous identity for my clients in the digital world. When i’m not coding I’m busy playing Dad with my daughter, at the gym or playing FIFA online….
+                I am a self taught front end developer with a couple of years experience, a career path I love. I aim to create clean, personal, unique websites to remove ambiguous identity for my clients in the digital world. When i’m not coding I’m a busy dad, at the gym or playing FIFA online….
                 <br><br>
                 Where am I now? You’ll find me at InPhase Ltd working as a front end dev for a software company that delivers a performance managment / BI tool!
                 </p>
@@ -141,7 +144,7 @@ $skillsArr = Array(
                            
                             ?>
                     </div>
-                    <h5 class="project-title"><?php echo $project->name?></h5>
+                    <h5 class="project-title"><a href="<?php echo $project->link?>"><?php echo $project->name?></a></h5>
                     <p class="project-text">
                   <?php echo $project->text?>
                     </p>
