@@ -206,6 +206,11 @@ nav.nav{
             text-transform: uppercase;
             padding: 10px;
 
+
+        }
+
+        &--close:hover{
+            cursor: pointer;
         }
         
     }
@@ -707,6 +712,88 @@ nav.nav{
         text-transform: uppercase;
     }
 
+}
+
+
+.contact-form__section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#E7D8C4 50%, #EBEBEB 50%);
+    padding: 20px;
+    flex-direction: column;
+
+
+    .contact-form__title{
+        font-weight: normal;
+        font-size: 14px;
+        margin: 50px 0;
+
+        @media screen and (min-width: $small-to-med){
+            font-size: 18px;
+            
+        }
+    }
+
+    .form__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+
+        .form__labels{
+            font-size: 10px;
+            letter-spacing: 1px;
+
+            @media screen and (min-width: $small-to-med){
+                width: 600px;
+                margin: 0 auto;
+                font-size: 12px;
+                
+            }
+        }
+
+        .form__input, .form__textarea{
+            margin: 10px 0;
+            outline: none;
+            border: none;
+
+            @media screen and (min-width: $small-to-med){
+                width: 600px;
+                margin: 10px auto;
+                
+            }
+        }
+
+        .form__textarea{
+            resize: none;
+        }
+
+        .form__submit{
+           text-align: center;
+
+           input{
+               margin: 0 30px;
+               background-color: #fff;
+               box-shadow: none;
+               border-style: none;
+               padding: 5px 10px;
+               letter-spacing: 2px;
+               text-transform: uppercase;
+               font-size: 8px;
+
+               @media screen and (min-width: $small-to-med){
+                font-size: 10px;
+                
+            }
+           }
+
+           input:focus{
+               outline: none;
+           }
+        }
+    }
 }
 
 

@@ -10,15 +10,7 @@
 
         <div class="footer__social-media--wrapper">
             <div class="media__container">
-                <a href="#">
-                    <svg class="social__icon">
-                    <use xlink:href="svg/svgsprite.svg#codepen-brands"></use>
-                </svg>
-                </a>
-           
-            </div>
-            <div class="media__container">
-                <a href="#">
+                <a href="mailto:mikegranil@hotmail.co.uk">
                     <svg class="social__icon">
                     <use xlink:href="svg/svgsprite.svg#envelope-regular"></use>
                 </svg>
@@ -26,7 +18,7 @@
             
             </div>
             <div class="media__container">
-                <a href="#">
+                <a href="https://github.com/DevGranil?tab=repositories">
                 <svg class="social__icon">
                 <use xlink:href="svg/svgsprite.svg#github-brands"></use>
             </svg>
@@ -34,7 +26,7 @@
             
             </div>
             <div class="media__container">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/michaelgranil/">
                 <svg class="social__icon">
                 <use xlink:href="svg/svgsprite.svg#linkedin-in-brands"></use>
             </svg>

@@ -51,7 +51,7 @@ $skillsArr = Array(
   new Skills("CSS", 70,),
   new Skills("Javascript", 70),
   new Skills("PHP", 40),
-  new Skills("Typescript", 50),
+  new Skills("Typescript", 60),
   new Skills("SCSS", 70),
   new Skills("Angular", 40)
 );
@@ -69,8 +69,7 @@ $skillsArr = Array(
         </div>
         <div class="mob-nav__wrapper">
             <ul >
-                <li class="mob-nav__link"><a href="">ABOUT ME</a></li>
-                <li class="mob-nav__link"><a href="">CONTACT FORM</a></li>
+                <li class="mob-nav__link"><a href="contact-form.php">CONTACT FORM</a></li>
                 <li class="mob-nav__link--close">Close</li>
             </ul>
         </div>

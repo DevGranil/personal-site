@@ -208,6 +208,10 @@ nav.nav .mob-nav__link--close {
   }
 }
 
+nav.nav .mob-nav__link--close:hover {
+  cursor: pointer;
+}
+
 .about-me__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,6 +804,105 @@ nav.nav .mob-nav__link--close {
   font-size: 8px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.contact-form__section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #E7D8C4), color-stop(50%, #EBEBEB));
+  background-image: linear-gradient(#E7D8C4 50%, #EBEBEB 50%);
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form__section .contact-form__title {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 50px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .contact-form__section .contact-form__title {
+    font-size: 18px;
+  }
+}
+
+.contact-form__section .form__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form__section .form__wrapper .form__labels {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 600px) {
+  .contact-form__section .form__wrapper .form__labels {
+    width: 600px;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+}
+
+.contact-form__section .form__wrapper .form__input, .contact-form__section .form__wrapper .form__textarea {
+  margin: 10px 0;
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 600px) {
+  .contact-form__section .form__wrapper .form__input, .contact-form__section .form__wrapper .form__textarea {
+    width: 600px;
+    margin: 10px auto;
+  }
+}
+
+.contact-form__section .form__wrapper .form__textarea {
+  resize: none;
+}
+
+.contact-form__section .form__wrapper .form__submit {
+  text-align: center;
+}
+
+.contact-form__section .form__wrapper .form__submit input {
+  margin: 0 30px;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-style: none;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 8px;
+}
+
+@media screen and (min-width: 600px) {
+  .contact-form__section .form__wrapper .form__submit input {
+    font-size: 10px;
+  }
+}
+
+.contact-form__section .form__wrapper .form__submit input:focus {
+  outline: none;
 }
 
 .ham-rotate__clock {
