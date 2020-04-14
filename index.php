@@ -59,6 +59,7 @@ $skillsArr = Array(
   new Skills("Angular", 40)
 );
 
+
 ?>
 
 <?php include 'header.php'?>
@@ -72,7 +73,7 @@ $skillsArr = Array(
         </div>
         <div class="mob-nav__wrapper">
             <ul >
-                <li class="mob-nav__link"><a href="contact-form.php">CONTACT FORM</a></li>
+                <li class="mob-nav__link"><a href="contact-form">CONTACT FORM</a></li>
                 <li class="mob-nav__link--close">Close</li>
             </ul>
         </div>

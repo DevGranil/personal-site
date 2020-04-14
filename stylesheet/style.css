@@ -875,6 +875,12 @@ nav.nav .mob-nav__link--close:hover {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .contact-form__section .form__wrapper .form__input {
+    height: 25px;
+  }
+}
+
 .contact-form__section .form__wrapper .form__textarea {
   resize: none;
 }
@@ -903,6 +909,14 @@ nav.nav .mob-nav__link--close:hover {
 
 .contact-form__section .form__wrapper .form__submit input:focus {
   outline: none;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .ham-rotate__clock {

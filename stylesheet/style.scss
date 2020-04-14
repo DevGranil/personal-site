@@ -764,6 +764,15 @@ nav.nav{
                 margin: 10px auto;
                 
             }
+
+            
+        }
+
+        .form__input {
+            @media screen and (min-width: $medScreen){
+                height:25px;
+                
+            }
         }
 
         .form__textarea{
@@ -794,6 +803,14 @@ nav.nav{
            }
         }
     }
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 0;
 }
 
 
