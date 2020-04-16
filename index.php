@@ -36,8 +36,7 @@ class Projects{
 
 $projectArray = Array(
     new Projects("ELOUIZA UPLIFTS", Array("HTML", "CSS", "JAVASCRIPT", "PHP", "WORDPRESS"),
-    "Custom built word press theme so one of a kind. If you’re into fitness, food, lifestyle and….. 
-    the boring part…being a student then check this space out. Elouiza gives great tips on these topics within her social blogging platform.",
+    "Custom built word press theme. If you’re into fitness, food, lifestyle and being a student then check this space out. Elouiza gives great tips on these topics within her blogging platform.",
     "images/elouizauplifts.jpg",
     "images/elouizauplifts-phone.jpg",
     "images/elouizupliftsbg.png",
@@ -95,9 +94,9 @@ $skillsArr = Array(
                       <use xlink:href="svg/svgsprite.svg#responsive"></use>
                 </svg>
                 <p class="about-me__content--text">
-                I am a self taught front end developer with a couple of years experience, a career path I love. I aim to create clean, personal, unique websites to remove ambiguous identity for my clients in the digital world. When i’m not coding I’m a busy dad, at the gym or playing FIFA online….
+                I am a self taught Web Developer with a couple of years experience, a career path I love. I aim to create clean, personal, unique websites to remove ambiguous identity for my clients in the digital world. When I’m not coding I’m a busy dad, at the gym or playing FIFA online….
                 <br><br>
-                Where am I now? You’ll find me at InPhase Ltd working as a front end dev for a software company that delivers a performance managment / BI tool!
+                Where am I now? You’ll find me at InPhase Ltd working as a Front End Developer for a software company that delivers a performance managment tool!
                 </p>
                 
 
