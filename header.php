@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web & Front-End Developer">
     <script src="scripts/jQuery_min_v3.4.1.js" type="text/javascript"></script>
     <script src="scripts/main.js" type="text/javascript"></script>
     <link rel="icon" href="images/favicon.jpg" type="image/gif" sizes="16x16">
