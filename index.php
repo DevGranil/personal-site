@@ -36,7 +36,7 @@ class Projects{
 
 $projectArray = Array(
     new Projects("ELOUIZA UPLIFTS", Array("HTML", "CSS", "JAVASCRIPT", "PHP", "WORDPRESS"),
-    "Custom built word press theme. If you’re into fitness, food, lifestyle and being a student then check this space out. Elouiza gives great tips on these topics within her blogging platform.",
+    "Custom built word press theme. If you’re into fitness, food and lifestyle check this space out. Elouiza gives great tips on these topics within her blogging platform.",
     "images/elouizauplifts.jpg",
     "images/elouizauplifts-phone.jpg",
     "images/elouizupliftsbg.png",
