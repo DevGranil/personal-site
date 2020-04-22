@@ -97,7 +97,7 @@ $skillsArr = Array(
                 I am a Web Developer from Sutton, Surrey currently based in Taplow. I enjoy creating clean and personal websites to remove ambiguous identity for my clients in the digital world.
                 Where am I now? You’ll find me at InPhase Ltd working as a Front End Developer for a software company that delivers a project managment tool.
                 <br><br>
-                Do you have a project in mind or are you an employer looking to hire an experienced Web or Front-End Developer? Please get in touch.   
+                Do you have a project in mind? Please get in touch.   
                 </p>
                 
             </div>
