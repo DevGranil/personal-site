@@ -79,7 +79,7 @@ if(filter_has_var(INPUT_POST, 'reset')){
     </nav>
 
     <section class="contact-form__section">
-        <h4 class="contact-form__title">If you have a project in mind or just want friendly info let’s get in contact</h4>
+        <h4 class="contact-form__title">The possibilities are endless lets get in contact</h4>
         <?php if($messageToUser !== " "): ?>
             <p><?php echo $messageToUser?></p>
         <?php endif;?>

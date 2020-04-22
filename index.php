@@ -94,12 +94,12 @@ $skillsArr = Array(
                       <use xlink:href="svg/svgsprite.svg#responsive"></use>
                 </svg>
                 <p class="about-me__content--text">
-                I am a self taught Web Developer with a couple of years experience, a career path I love. I aim to create clean, personal, unique websites to remove ambiguous identity for my clients in the digital world. When I’m not coding I’m a busy dad, at the gym or playing FIFA online….
+                I am a Web Developer from Sutton, Surrey currently based in Taplow. I enjoy creating clean and personal websites to remove ambiguous identity for my clients in the digital world.
+                Where am I now? You’ll find me at InPhase Ltd working as a Front End Developer for a software company that delivers a project managment tool.
                 <br><br>
-                Where am I now? You’ll find me at InPhase Ltd working as a Front End Developer for a software company that delivers a performance managment tool!
+                Do you have a project in mind or are you an employer looking to hire an experienced Web or Front-End Developer? Please get in touch.   
                 </p>
                 
-
             </div>
         </div>
     </section>
