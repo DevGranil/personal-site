@@ -35,20 +35,21 @@ class Projects{
 }
 
 $projectArray = Array(
-    new Projects("ELOUIZA UPLIFTS", Array("HTML", "CSS", "JAVASCRIPT", "PHP", "WORDPRESS"),
-    "Custom built word press theme. If you’re into fitness, food and lifestyle check this space out. Elouiza gives great tips on these topics within her blogging platform.",
-    "images/elouizauplifts.jpg",
-    "images/elouizauplifts-phone.jpg",
-    "images/elouizupliftsbg.png",
-    "http://www.elouizauplifts.co.uk/"
-),
     new Projects("SRS PHYSIOTHERAPY CLINIC", Array("HTML", "SCSS", "TYPESCRIPT", "PHP", "JQUERY"),
     "A mobile physiotherapy clinic based in Wimbledon. The aim was to build a clean, interative website with good accessbility. This helps target a wide audience with minimal complexity.",
     "images/srs.jpg",
     "images/srs-phone.jpg",
     "images/srsbg.png",
     "https://www.srsphysio.co.uk/"
-    )
+),
+    new Projects("ELOUIZA UPLIFTS", Array("HTML", "CSS", "JAVASCRIPT", "PHP", "WORDPRESS"),
+    "Custom built word press theme. If you’re into fitness, food and lifestyle check this space out. Elouiza gives great tips on these topics within her blogging platform.",
+    "images/elouizauplifts.jpg",
+    "images/elouizauplifts-phone.jpg",
+    "images/elouizupliftsbg.png",
+    "http://www.elouizauplifts.co.uk/"
+)
+   
 );
 
 
