@@ -36,7 +36,7 @@ class Projects{
 
 $projectArray = Array(
     new Projects("SRS PHYSIOTHERAPY CLINIC", Array("HTML", "SCSS", "TYPESCRIPT", "PHP", "JQUERY"),
-    "A mobile physiotherapy clinic based in Wimbledon. The aim was to build a clean, interative website with good accessibility. This helps target a wide audience with minimal complexity.",
+    "A mobile physiotherapy clinic based in Wimbledon. I aimed to build a clean, interactive website with good accessibility. This helps target a wide audience with minimal complexity.",
     "images/srs.jpg",
     "images/srs-phone.jpg",
     "images/srsbg.png",
