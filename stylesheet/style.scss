@@ -462,6 +462,7 @@ nav.nav{
         }
 
         .a-proj{
+
             &__wrapper{
             min-height: 50px;
             display: flex;
@@ -469,7 +470,8 @@ nav.nav{
             background-size: 200px;
             justify-content: center;
             background-repeat: no-repeat;
-            background-position: right bottom;;
+            background-position: right bottom;
+            margin: 80px 0;
 
             @media screen and (min-width: $small-to-med){
                 background-size: 300px;

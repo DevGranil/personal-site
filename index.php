@@ -41,7 +41,13 @@ $projectArray = Array(
     "images/elouizauplifts-phone.jpg",
     "images/elouizupliftsbg.png",
     "http://www.elouizauplifts.co.uk/"
-
+),
+    new Projects("SRS PHYSIOTHERAPY CLINIC", Array("HTML", "SCSS", "TYPESCRIPT", "PHP", "JQUERY"),
+    "A mobile physiotherapy clinic based in Wimbledon. The aim was to build a clean, interative website with good accessbility. This helps target a wide audience with minimal complexity.",
+    "images/srs.jpg",
+    "images/srs-phone.jpg",
+    "images/srsbg.png",
+    "https://www.srsphysio.co.uk/"
     )
 );
 
@@ -150,11 +156,11 @@ $skillsArr = Array(
                     </p>
                 </div>
             </div>
+            <?php endforeach?>
 
         </div>
 
-                <?php endforeach?>
-        </div>
+                
 </section>
 
 <?php include 'footer.php'?>
