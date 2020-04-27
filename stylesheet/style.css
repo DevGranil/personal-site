@@ -504,7 +504,7 @@ nav.nav .mob-nav__link--close:hover {
           justify-content: center;
   background-repeat: no-repeat;
   background-position: right bottom;
-  margin: 80px 0;
+  margin-top: 80px;
 }
 
 @media screen and (min-width: 600px) {
